@@ -1,0 +1,838 @@
+/*
+Theme Name: BlueWave
+Theme URI: /http://futureis404.info/
+Author: futureis404
+Author URI: http://futureis404.info/
+Description: 蓝色清爽主题，大部份的样式表做了中文标注，便于修改，兼容浏览器：IE7 IE8 IE9 Firefox Chrome opera
+Version: 1.0
+License: GNU General Public License
+License URI: license.txt
+Tags: simple,blue,蓝色,简洁,单栏
+This is a very simple theme.
+*/
+
+/* =Structure
+-------------------------------------------------------------- */
+/*全文链接*/
+a:link {
+	color: #35679A;
+	text-decoration: none; /* 去除链接下划线 */
+	}     /* 未访问的链接 */
+a:visited {color: #35679A;}  /* 已访问的链接 */
+a:hover {
+	/* border-bottom: dashed 1px #ccc;*/
+}    /* 当有鼠标悬停在链接上 */
+a:active {color: #000;}   /* 被选择的链接 */
+
+body {  /* 默认字体样式 */
+	font-size: 0.75em;
+	color: #666;
+	font-family: 微软雅黑,Arial,Tahoma,sans-serif;
+	width:90%;
+	margin:auto;
+	background-image:url(images/main_bg.jpg);
+	background-attachment:fixed;
+	}
+#headbar {
+	height: 200px;
+	background-color:#0099cc;
+	background-image:url(images/header_bg.png);
+	background-repeat:no-repeat;
+	background-position:100% 100%;
+		}
+#mainpage {
+	padding-top:10px;
+	margin:10px auto auto auto;
+	max-width: 80em; /*页面宽度*/
+	width: 100%;
+	background-color:#fff;
+-moz-box-shadow:2px 2px 10px 2px #000;
+-webkit-box-shadow:2px 2px 10px 2px #000;
+box-shadow:2px 2px 10px 2px #000;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	 border-radius: 5px;
+	 background-image:url(images/main_bg.gif);
+		}
+#page {       /* 页面样式*/
+	display: block;
+	padding-top:0em
+}
+#primary { /* 内容和边栏*/
+	float: left;
+	margin: 0 -30% 0 0;
+	width: 100%;
+	min-height: 400px;
+}
+#content {/* 内容*/
+	margin: 0 30% 0 0;
+	width: 70%;
+	min-width: 240px;
+	padding:1em;
+}
+
+}
+#content img {
+
+	}
+.entry-content {
+
+}
+.entry-date {
+padding-right:20px;
+background-image:url(images/clock.gif);
+background-repeat:no-repeat;
+background-position:100%;
+}
+.entry-content img {
+	max-width: 100%;
+	height: auto;
+	}
+.entry-title {/*文章页标题样式*/
+	color:#0099CC;
+	font-size:18px;
+	border-bottom:1px dotted #ccc;
+	}
+*+html .entry-title {/*文章页标题样式*/
+padding-top:20px;
+border:none;
+	}
+.entry-title a {/*文章页标题链接样式*/
+	color: #333;
+	font-size:14px;
+	border-left:5px solid #0099cc;
+	padding-left:1em;
+	}
+.entry-title a:hover {/*文章页标题链接悬停样式*/
+padding-left:2em;
+	}
+.entry-header {
+	border: none;
+	}
+#main .widget-area {/* 边栏*/
+	float: right;
+	overflow: hidden;
+	width: 26%;
+	min-width: 240px;
+	padding: 1em 1em 1em 1em;
+	margin-top: 25px;
+	text-align:left;
+}
+#main .widget-title {
+	border-bottom: 2px solid #ccc;
+	font-size:14px;
+	}
+#main .widget-area ul {
+	margin-left: -3em;
+	list-style-type : none;
+}
+*+html #main .widget-area ul {
+	margin-left: 0em;
+	list-style-type : none;
+}
+#main .widget-area li {
+	text-overflow:ellipsis;/*IEHack*/
+	overflow:hidden;
+	line-height:20px;
+	}
+#main .widget-area a {/* 边栏*/
+ /*边栏链接颜色*/
+}
+.tag-links {
+	margin-right: 1em;
+	}
+.tag-links a {
+	padding:2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	 border-radius: 2px;
+	}
+.tag-links a:hover {
+
+}
+.cat-links {
+	margin-right: 1em;
+
+	}
+#colophon { /*版权*/
+	clear: both;
+	margin: auto;
+	text-align:center;
+}
+#foot {
+	height: 5em;
+	line-height:5em;
+	width: 100%;
+	max-width: 80em;
+	margin: auto;
+	text-align:center;
+	}
+/* 没有侧边栏增加模板的内容区域的大小 */
+.full-width #content,
+.image-attachment #content,
+.error404 #content {
+	width: 100%;
+margin: 2em 0em 2em 0em;
+}
+
+/* 屏幕阅读器优化 */
+.screen-reader-text,
+.assistive-text {
+	position: absolute !important;
+	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+	clip: rect(1px, 1px, 1px, 1px);
+}
+
+/* 对齐 */
+.alignleft {
+	display: inline;
+	float: left;
+}
+.alignright {
+	display: inline;
+	float: right;
+}
+.aligncenter {
+	clear: both;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+
+/* =头部
+-------------------------------------------------------------- */
+
+#site-title { /*站点标题*/
+	font-size: 3em;
+	font-weight: bold;
+	text-shadow:4px 2px 5px #000;
+}
+#site-title a {
+	color:#fff;
+text-decoration:none;
+	}
+#site-title a:hover {
+border-bottom:3px solid #fff;
+	}
+#site-description { /*站点描述*/
+	font-size: 1em;
+	font-weight: normal;
+	color:#fff;
+	padding-top:20px;
+}
+#title {
+		float: left;
+		margin-top: 0em;
+		margin-left: 4em;
+	}
+*+html #title {
+		float: left;
+		margin-top: 2em;
+		margin-left: 4em;
+	}
+#description {
+	float: right;
+	margin-top: 6em;
+	margin-right: 160px;
+	}
+/* =菜单
+-------------------------------------------------------------- */
+#menubar {	
+	width: 100%;
+	float: left;
+	padding-top:45px;
+	}
+#access {
+	height: 2em;
+	display: block;
+}
+#access ul {
+	list-style: none;
+	margin: 0;
+	padding-left: 1em;
+
+	
+}
+#access li {
+	float: left;
+	position: relative;
+
+
+}
+#access a {
+	display: block;
+	line-height: 30px;
+	height:30px;
+	padding: 0 1em;
+	text-decoration: none;
+	font-size: 1em;
+	font-weight: bold;
+	color: #fff;
+	text-shadow:3px 1px 4px #000;
+}
+
+
+#access ul ul {
+
+	display: none;
+	float: left;
+	position: absolute;
+	top: 2em;
+	left: 0;
+	z-index: 99999;
+}
+#access ul ul ul {
+	left: 100%;
+	top: 0;
+}
+#access ul ul a {
+	line-height: 1em;
+	padding: .5em .5em .5em 1em;
+	width: 10em;
+	height: auto;	
+}
+#access a:link {
+	display: block;
+	line-height: 2em;
+	padding: 0 1em;
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: bold;
+	}
+#access a:hover {	/*悬停链接样式*/
+		color: #000;
+		border:none;
+		background-color:#fff;
+		text-shadow:none;
+	}
+#access .current-menu-item a /*活动链接样式*/
+{ 
+		color:#000000;
+		border:none;
+		background-color:#fff;
+		text-shadow:none;
+	}
+*+html #access .current-menu-item a /*活动链接样式*/
+{ 
+		color:#000000;
+		border:none;
+		background-color:#fff;
+	}
+
+
+#access a:active {
+	
+	}
+#access ul li:hover > ul {
+	display: block;
+}
+
+/* =内容
+-------------------------------------------------------------- */
+
+.sticky {
+}
+#header-entry-meta {
+/*width:80px;
+height:40px;
+margin-left:-105px;
+margin-top:-55px;
+text-align:center;
+line-height:40px;
+font-size:12px;
+font-weight:bold;
+background-image:url(images/data-bg.png);*/
+float:right;
+margin-top:-35px;
+
+}
+#header-entry-meta a{
+color:#0099cc;
+}
+footer.entry-meta {
+	color: #999;
+	clear: both;
+	display: block;
+	font-weight:bold;
+}
+footer.entry-meta a:hover {
+	color:#000;
+}
+.entry-meta a {
+color:#999;
+font-weight:normal;
+}
+.comments-link {
+
+}
+.single-author .entry-meta .byline {
+	display: none;
+}
+#content nav {
+	display: block;
+	overflow: hidden;
+}
+#content nav .nav-previous { /*上一页*/
+	float: left;
+	width: 50%;
+	text-overflow:ellipsis;/*IEHack*/    /*长字符串截断*/
+	white-space: nowrap;                 /*长字符串截断*/
+	overflow:hidden;                     /*长字符串截断*/
+}
+#content nav .nav-next { /*下一页*/
+	float: right;
+	text-align: right;
+	width: 50%;
+	text-overflow:ellipsis;/*IEHack*/    /*长字符串截断*/
+	white-space: nowrap;                 /*长字符串截断*/
+	overflow:hidden;                     /*长字符串截断*/
+}
+#content #nav-above {
+	display: none;
+}
+.paged #content #nav-above,
+.single #content #nav-above {
+	display: block;
+}
+#nav-below {
+	margin: 1em 0 0;
+}
+.page-link {
+	clear: both;
+	margin: 0 0 1em;
+}
+.page .edit-link {
+	clear: both;
+	display: block;
+}
+.more-link {
+font-size:12px;
+	float:right;
+	display: block;
+	height:2em;
+	line-height:2em;
+	margin-top:1em;
+	margin-bottom:1em;
+	font-weight:bold;
+	width:100%;
+	border-top:dotted 1px #ccc;
+	text-align: right;
+	}
+a.more-link  {
+	color:#ccc;
+}
+a:hover.more-link {
+color:#000;
+}
+/* 404 page */
+.error404 .widget {
+	float: left;
+	width: 33%;
+}
+.error404 .widget .widgettitle,
+.error404 .widget ul {
+	margin-right: 1em;
+}
+.error404 .widget_tag_cloud {
+	clear: both;
+	float: none;
+	width: 100%;
+}
+#nofound {
+	background-image:url(./images/404.jpeg);
+	width: 140px;
+	height: 140px;
+	margin: auto;
+	}
+#nofoundtxt {
+font-size: 2em;
+font-weight: bold;
+color: #fff;
+padding-left: 2em;
+padding-top: 2em;
+	}
+/* 404 */
+.post .notice,
+.error404 #searchform { /*404搜索框*/
+	display: block;
+	padding: 1em;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	 border-radius: 5px;
+}
+.error404 #searchform input[type=submit]{
+	background-color: #fff;
+	color: #000;
+	width: 5em;
+	height: 2em;
+	border:1px solid #333;
+	font-weight: bold;
+}
+.error404 #searchform input[type=submit]:hover{
+	width: 5em;
+	height: 2em;
+background-color:#fff;
+border:1px solid #ccc;
+	font-weight: bold;
+}
+#main input[type=submit]
+{
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	 border-radius: 5px;
+	 border:1px solid #333;
+	}
+#main input[type=submit]:hover
+{
+	
+background-color:#fff;
+border:1px solid #ccc;
+	}
+/* 图片附件 */
+.image-attachment div.entry-meta {
+	float: left;
+}
+.image-attachment nav {
+	float: right;
+	margin: 0 0 1em 0;
+	
+}
+.image-attachment .entry-content {
+	clear: both;
+}
+.image-attachment .entry-content .entry-attachment {
+
+	margin: 0 0 1em;
+	padding: 1em;
+	text-align: center;
+}
+.image-attachment .entry-content .attachment {
+	display: block;
+	margin: 0 auto;
+	text-align: center;
+}
+
+/* Aside Posts */
+.format-aside .entry-header {
+	display: none;
+}
+.single .format-aside .entry-header {
+	display: block;
+}
+.format-aside .entry-content,
+.format-aside .entry-summary {
+	padding-top: 1em;
+}
+.single .format-aside .entry-content,
+.single .format-aside .entry-summary {
+	padding-top: 0;
+}
+
+/* 相册 */
+.format-gallery .gallery-thumb {
+	float: left;
+	margin: 0 1em 0 0;
+}
+
+/* Image Posts */
+.format-image .entry-header {
+	display: none;
+}
+.single .format-image .entry-header {
+	display: block;
+}
+.format-image .entry-content,
+.format-image .entry-summary {
+	padding-top: 1em;
+}
+.single .format-image .entry-content,
+.single .format-image .entry-summary {
+	padding-top: 0;
+}
+
+/* =图片
+-------------------------------------------------------------- */
+
+a img {
+    -moz-box-shadow: 3px 3px 4px #000;
+    -webkit-box-shadow: 3px 3px 4px #000;
+    box-shadow: 3px 3px 4px #000;
+}
+*+html a img {
+border:4px solid #666;
+}
+p img {
+	 /* a small bottom margin prevents content floating under images */
+}
+/*
+Resize images to fit the main content area.
+- Applies only to images uploaded via WordPress by targeting size-* classes.
+- Other images will be left alone. Use "size-auto" class to apply to other images.
+*/
+img.size-auto,
+img.size-full,
+img.size-large,
+img.size-medium,
+.attachment img,
+.widget-area img,
+.wp-caption {
+	max-width: 100%; /* When images are too wide for containing element, force them to fit. */
+	height: auto; /* Override height to match resized width for correct aspect ratio. */
+}
+img.alignleft {
+	margin-right: 1em;
+}
+img.alignright {
+	margin-left: 1em;
+}
+.wp-caption {
+	padding: .5em;
+	text-align: center;
+}
+.wp-caption img {
+	margin: .25em;
+}
+.wp-caption .wp-caption-text {
+	margin: .5em;
+}
+.gallery-caption {
+}
+.wp-smiley {
+	margin: 0;
+}
+
+
+/* =表单
+-------------------------------------------------------------- */
+
+#searchform label {
+	display: none;
+	
+}
+#searchform input#s {
+	width: 65%;
+}
+input[type=text],
+input#s {
+	margin: 0 1em 0 0;
+	width: 60%;
+	border: 3px solid #ccc;
+	background-image:url(images/go.gif);
+	background-repeat:no-repeat;
+	background-position:2px 3px;
+}
+input[type=text],
+input#s:focus {
+	background-image:none;
+}
+textarea {
+	width: 80%;
+	border:3px solid #ccc;
+}
+
+/* 类的标签所需的表单项目 */
+.required {
+	color: #cc0033;
+}
+/*文章*/
+article {
+	background-color:#fff;
+	border:solid 1px #ccc;
+	padding:0px 20px 5px 20px;
+	margin:10px auto 10px auto;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	 border-radius: 5px;
+}
+*+html article{
+	border:none;
+	background-color:none;
+}
+*+html article:hover {
+border:none;
+	background-color:none;
+}
+article:hover {
+border:solid 1px #0099cc;
+}
+/* =评论
+-------------------------------------------------------------- */
+article.comment {
+	display: block;
+	margin-right:10px;
+	padding-top:5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 9px;
+	 border-radius: 9px;
+	 background-image:url(images/comments_bg.gif);
+}
+#respond {
+padding:1em;
+}
+.comment-meta-commentmetadata {
+font-size:10px;
+line-height:15px;
+border-bottom:dashed 1px #ccc;
+
+}
+.comment-meta-commentmetadata a {
+color:#666;
+}
+.comment-author-vcard {
+font-weight:bold;
+}
+.tips {
+float:right;
+color:red;
+margin-top:-20px;
+}
+.comment-author-vcard img {
+	width:30px;
+	height:30px;
+}
+#respond input[type=submit]  {
+	display: block;
+	width: 80px;
+	background-image:url(images/replay80.png);
+	color: #fff;
+	width: 6em;
+	height: 23px;
+	border:none;
+	font-weight: bold;
+}
+#respond input[type=submit]:hover {
+border:1px solid #ccc;
+}
+#respond input[type=text]  {
+float:left;
+width: 40%;
+border: 3px solid #ccc;
+}
+
+#respond textarea {
+	display: block;
+	margin: 0 0 1em;
+	width: 80%;
+}
+#respond .form-allowed-tags {
+	clear: both;
+	width: 80%;
+}
+#respond .form-allowed-tags code {
+	display: block;
+}
+#comments {
+	margin-top: 1em;	
+	}
+#comments img {
+	float: left;
+	padding-right: 1em;
+	}
+#comments p {
+	clear: left;
+	padding-top: 1em;
+	padding-left:1em;
+	}
+.comment-reply-link { 
+	display: block;	
+	text-align: right;
+	line-height:20px;
+	margin-right: 1em;
+	background-image:url(images/replay.png);
+	background-repeat:no-repeat;
+	background-position:100%;
+	}
+a.comment-reply-link {
+	color:#fff;
+	padding-right:18px;
+}
+.comment-content {
+	margin-right: 1em;
+	white-space: normal;
+	}
+
+#comments .commentlist { /*评论区域*/
+		padding-top: 1em;
+		padding-bottom: 1em;
+		padding-right: 1em;
+	}
+#comments .commentlist li {
+	padding-top: 5px;
+
+	padding-left: 1em;
+	margin: 1em;
+	background-image:url(images/sorrow.png);
+	background-repeat: no-repeat;
+	background-position:2px 30px ;
+	}
+#respond textarea {
+color: #333;
+font-size: 1em;
+background-image:url(images/textarea_bg.png);
+background-repeat:no-repeat;
+background-position:95% 90%;
+	}
+#respond textarea:focus{
+background-image:none;
+}
+/* =部件
+-------------------------------------------------------------- */
+
+.widget {
+	display: block;
+}
+.widget-area .widget_search { /*边栏搜索框*/
+	padding: 1em;
+	overflow: hidden;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	 border-radius: 5px;
+}
+.widget-area .widget_search input {
+	float: left;
+}
+.widget-area .widget_search input[type=submit]{
+	background-image:url(images/search-bottom.png);
+	color: #000;
+	width: 50px;
+	height: 26px;
+	border:none;
+}
+.widget-area .widget_search input[type=submit]:active {
+background-image:url(images/search-bottom-hover.png);
+}
+/* =底部
+-------------------------------------------------------------- */
+
+#colophon {
+	padding: 1em 0 0;
+}
+/*view 插件*/
+.hotview {
+color:#0099cc;
+float:right;
+}
+/*相关日志插件 插件*/
+.related_post_title {
+border-top:double 3px #ccc;
+padding-top:1em;
+}
+.feedsky {
+width:100%;
+height:25px;
+padding-bottom:5px;
+}
+.feedsky img{
+    -moz-box-shadow: 0px 0px 0px #000;
+    -webkit-box-shadow: 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px #000;
+float:right;
+padding-right:10px;
+}
+*+html .feedsky img{
+float:right;
+padding-right:10px;
+border:none;
+}
