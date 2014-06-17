@@ -80,7 +80,7 @@ blockquote p:last-child,.comment_list blockquote p:last-child {margin-bottom:0;}
 #menu .current-menu-item a,#menu .current-menu-parent a {background:url(images/nav_hover.png) no-repeat center -4px; color:#666;}
 .sub-menu {display:none;}
 /*Content*/
-#content {color:#444; text-shadow:1px 1px #fff; clear:both; overflow:hidden; position:relative;}
+#content {color:#444; clear:both; overflow:hidden; position:relative;}
 .mini_nav {margin-bottom:1.5em; font-size:1.3em; color:#999;}
 .mini_nav strong {color:#555;}
 .time {font-size:0.8em; color:#999; display:block;}

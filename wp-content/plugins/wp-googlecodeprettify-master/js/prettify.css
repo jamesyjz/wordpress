@@ -32,7 +32,7 @@ pre.prettyprint.linenums ol li {
   margin-left: 0;
   list-style: decimal;
 }
-.prettyprint ol.linenums{ margin-bottom: 0;/*margin-bottom: -8px; margin-top:-8px; margin-right: -8px; position:relative;*/background-color: #272822; padding: 8px}
+.prettyprint ol.linenums{ margin-bottom: 0;/*margin-bottom: -8px; margin-top:-8px; margin-right: -8px; position:relative;*/background-color: #272822; padding: 8px; margin-left: 45px; list-style-position: outside;}
 .prettyprint .com { color: #93a1a1; }
 .prettyprint .lit { color: #AE81FF; }
 .prettyprint .pun,
