@@ -5,6 +5,7 @@
     background-color: #444444;
     border: 1px solid #272822;
     overflow: hidden;
+    overflow-x: scroll;
     padding: 0px;
     margin: 20px 0;
     font: 14px/20px 'courier new';
